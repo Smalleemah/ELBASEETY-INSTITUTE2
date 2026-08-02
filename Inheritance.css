@@ -1,0 +1,2095 @@
+body{
+
+    font-family: 'Poppins', sans-serif;
+
+    overflow-x:hidden;
+
+    background:#ffffff;
+
+}
+
+/* Navbar */
+.custom-navbar  {
+
+background:#fff;
+
+padding:18px 0;
+
+box-shadow:0 4px 25px rgba(0,0,0,.05);
+
+transition:all .4s ease;
+
+z-index:1000;
+
+border-bottom: 2px solid #C9A646;
+}
+
+.custom-navbar.scrolled {
+    background:#fff;
+
+    box-shadow:0 6px 25px rgba(0,0,0,.08);
+
+    border-bottom:2px solid #C9A646;
+}
+
+
+/* Logo */
+
+.logo{
+
+    width:58px;
+
+    height:58px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+}
+
+.navbar-brand h5{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#0B3D2E;
+
+    margin:0;
+
+}
+
+.navbar-brand small{
+
+    font-size:12px;
+
+    color:#777;
+
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link.active {
+    color: #0B3D2E !important;
+    font-weight: 700;
+}
+
+.nav-link.active::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #C9A646;
+    border-radius: 10px;
+}
+.navbar-nav {
+    gap: 10px;
+}
+@media (max-width: 991px){
+
+    .navbar .navbar-collapse{
+
+        text-align:center;
+
+    }
+
+
+    .navbar .navbar-nav{
+
+        width:100%;
+
+        align-items:center;
+
+        justify-content:center;
+
+        text-align:center;
+
+    }
+
+
+    .navbar .navbar-nav .nav-item{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+
+    .navbar .navbar-nav .nav-link{
+
+        display:block;
+
+        text-align:center;
+
+    }
+
+}
+
+/*=============================
+    NAVBAR LAUNCH BUTTON
+=============================*/
+
+.custom-navbar .btn-launch{
+
+background:#0B3D2E;
+
+color:#fff !important;
+
+padding:12px 30px;
+
+border-radius:50px;
+
+border:2px solid #0B3D2E;
+
+font-weight:600;
+
+transition:all .35s ease;
+
+display:inline-flex;
+
+align-items:center;
+
+text-decoration:none;
+
+margin-left: 18px;
+
+}
+
+.custom-navbar .btn-launch:hover{
+
+background:#C9A646;
+
+border-color:#C9A646;
+
+color:#0B3D2E !important;
+
+transform:translateY(-3px);
+
+}
+
+.custom-navbar.scrolled{
+
+    background:#fff;
+
+    box-shadow:0 6px 25px rgba(0,0,0,.08);
+}
+
+.brand-text h4{
+    font-size:18px;
+}
+
+.brand-text span{
+    font-size:11px;
+}
+
+.logo-img{
+    width:50px;
+    height:50px;
+}
+
+/*=========================================
+    INHERITANCE HERO
+==========================================*/
+
+.inheritance-hero{
+
+padding:160px 0 100px;
+
+background:#F8FAF9;
+
+}
+
+
+/*=========================================
+    HERO CONTENT
+==========================================*/
+
+.inheritance-hero .hero-tag{
+
+display:inline-block;
+
+color:#C9A646;
+
+font-size:14px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+margin-bottom:18px;
+
+}
+
+
+.inheritance-hero h1{
+
+color:#0B3D2E;
+
+font-size:52px;
+
+font-weight:800;
+
+line-height:1.2;
+
+margin-bottom:25px;
+
+}
+
+
+.inheritance-hero p{
+
+max-width:620px;
+
+color:#666;
+
+font-size:17px;
+
+line-height:1.9;
+
+margin-bottom:0;
+
+}
+
+
+/*=========================================
+    HERO BUTTONS
+==========================================*/
+
+.inheritance-hero .hero-buttons{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+margin-top:35px;
+
+flex-wrap:wrap;
+
+}
+
+
+/* Launch AMES */
+
+.inheritance-hero .btn-launch{
+
+padding:14px 28px;
+
+background:#0B3D2E !important;
+
+color:#fff !important;
+
+border:2px solid #0B3D2E !important;
+
+border-radius:50px;
+
+font-weight:700;
+
+transition:all .3s ease;
+
+}
+
+
+.inheritance-hero .btn-launch:hover{
+
+background:#C9A646 !important;
+
+border-color:#C9A646 !important;
+
+color:#0B3D2E !important;
+
+transform:translateY(-3px);
+
+}
+
+
+/* Book Consultation */
+
+.inheritance-hero .btn-outline-brand{
+
+padding:14px 28px;
+
+background:transparent !important;
+
+color:#0B3D2E !important;
+
+border:2px solid #0B3D2E !important;
+
+border-radius:50px;
+
+font-weight:700;
+
+transition:all .3s ease;
+
+}
+
+
+.inheritance-hero .btn-outline-brand:hover{
+
+background:#0B3D2E !important;
+
+color:#fff !important;
+
+border-color:#0B3D2E !important;
+
+transform:translateY(-3px);
+
+}
+
+
+/*=========================================
+        AMES HERO IMAGE FLOAT
+==========================================*/
+
+.inheritance-hero .hero-image img{
+
+    display:block;
+
+    width:100%;
+
+    animation: amesFloat 3s ease-in-out infinite;
+
+}
+
+
+@keyframes amesFloat{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+/* Gold accent */
+
+.inheritance-hero .hero-image::before{
+
+content:"";
+
+position:absolute;
+
+width:100px;
+
+height:100px;
+
+border-top:5px solid #C9A646;
+
+border-right:5px solid #C9A646;
+
+top:-15px;
+
+right:-5px;
+
+border-radius:0 20px 0 0;
+
+z-index:0;
+
+}
+
+
+.inheritance-hero .hero-image img{
+
+position:relative;
+
+z-index:1;
+
+}
+
+
+/*=========================================
+    MOBILE
+==========================================*/
+
+@media(max-width:991px){
+
+.inheritance-hero{
+
+    padding:140px 0 70px;
+
+}
+
+
+.inheritance-hero h1{
+
+    font-size:42px;
+
+}
+
+
+.inheritance-hero .hero-image{
+
+    padding-left:0;
+
+    margin-top:50px;
+
+}
+
+}
+
+
+@media(max-width:576px){
+
+.inheritance-hero h1{
+
+    font-size:34px;
+
+}
+
+
+.inheritance-hero p{
+
+    font-size:15px;
+
+}
+
+
+.inheritance-hero .hero-buttons{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+
+.inheritance-hero .hero-buttons .btn{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+}
+/*=========================================
+    WHAT IS MAWARITH
+==========================================*/
+
+.mawarith-section{
+
+padding:50px 0;
+
+background:#fff;
+
+}
+
+/*=========================================
+    SECTION TAG
+==========================================*/
+
+.mawarith-section .section-tag{
+
+display:inline-block;
+
+color:#C9A646;
+
+font-size:14px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+margin-bottom:14px;
+
+}
+
+
+/*=========================================
+    SECTION TITLE
+==========================================*/
+
+.mawarith-section .section-title{
+
+color:#0B3D2E;
+
+font-size:40px;
+
+font-weight:800;
+
+line-height:1.3;
+
+margin-bottom:25px;
+
+}
+
+
+.mawarith-section > .container > .row > .col-lg-6:first-child p{
+
+color:#666;
+
+font-size:16px;
+
+line-height:1.9;
+
+margin-bottom:18px;
+
+}
+
+
+/*=========================================
+    MAWARITH CARD
+==========================================*/
+
+.mawarith-card{
+
+padding:40px;
+
+background:#F8FAF9;
+
+border-radius:25px;
+
+border:1px solid rgba(11,61,46,.08);
+
+box-shadow:0 15px 40px rgba(11,61,46,.07);
+
+}
+
+
+/*=========================================
+    FEATURE ITEM
+==========================================*/
+
+.feature-item{
+
+display:flex;
+
+align-items:flex-start;
+
+gap:18px;
+
+padding:22px 0;
+
+border-bottom:1px solid rgba(11,61,46,.08);
+
+}
+
+
+.feature-item:first-child{
+
+padding-top:0;
+
+}
+
+
+.feature-item:last-child{
+
+border-bottom:none;
+
+padding-bottom:0;
+
+}
+
+
+.feature-item > i{
+
+flex-shrink:0;
+
+width:48px;
+
+height:48px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:#0B3D2E;
+
+color:#C9A646;
+
+border-radius:14px;
+
+font-size:21px;
+
+}
+
+
+.feature-item h5{
+
+color:#0B3D2E;
+
+font-size:18px;
+
+font-weight:700;
+
+margin:0 0 7px;
+
+}
+
+
+.feature-item p{
+
+color:#666;
+
+font-size:14px;
+
+line-height:1.7;
+
+margin:0;
+
+}
+
+
+/*=========================================
+    HOVER EFFECT
+==========================================*/
+
+.feature-item{
+
+transition:all .3s ease;
+
+}
+
+
+.feature-item:hover{
+
+transform:translateX(5px);
+
+}
+
+
+.feature-item:hover > i{
+
+background:#C9A646;
+
+color:#0B3D2E;
+
+}
+
+
+/*=========================================
+    MOBILE
+==========================================*/
+
+@media(max-width:768px){
+
+.mawarith-section{
+
+    padding:70px 0;
+
+}
+
+
+.mawarith-section .section-title{
+
+    font-size:32px;
+
+}
+
+
+.mawarith-card{
+
+    padding:30px 25px;
+
+}
+
+
+.feature-item{
+
+    gap:14px;
+
+}
+
+}
+
+/*=========================================
+    HOW AMES WORKS
+==========================================*/
+
+.ames-process{
+
+padding:75px 0;
+
+background:#FFFDF7;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+/*=========================================
+    DECORATIVE BACKGROUND
+==========================================*/
+
+.ames-process::before{
+
+content:"";
+
+position:absolute;
+
+width:220px;
+
+height:220px;
+
+border:1px solid rgba(201,166,70,.18);
+
+border-radius:50%;
+
+top:-120px;
+
+right:-70px;
+
+}
+
+
+.ames-process::after{
+
+content:"";
+
+position:absolute;
+
+width:160px;
+
+height:160px;
+
+border:1px solid rgba(11,61,46,.10);
+
+border-radius:50%;
+
+bottom:-90px;
+
+left:-60px;
+
+}
+
+
+.ames-process .container{
+
+position:relative;
+
+z-index:2;
+
+}
+
+
+/*=========================================
+    SECTION INTRO
+==========================================*/
+
+.ames-process .section-tag{
+
+display:inline-block;
+
+color:#C9A646;
+
+font-size:14px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+margin-bottom:12px;
+
+}
+
+
+.ames-process .section-title{
+
+max-width:800px;
+
+margin:0 auto 15px;
+
+color:#0B3D2E;
+
+font-size:40px;
+
+font-weight:800;
+
+line-height:1.3;
+
+}
+
+
+.ames-process .section-description{
+
+max-width:700px;
+
+margin:0 auto;
+
+color:#666;
+
+font-size:16px;
+
+line-height:1.8;
+
+}
+
+
+/*=========================================
+    PROCESS CARD
+==========================================*/
+
+.process-card{
+
+height:100%;
+
+padding:32px 25px;
+
+background:#fff;
+
+border:1px solid rgba(11,61,46,.08);
+
+border-radius:20px;
+
+text-align:center;
+
+position:relative;
+
+transition:all .35s ease;
+
+}
+
+
+.process-card:hover{
+
+transform:translateY(-7px);
+
+border-color:rgba(201,166,70,.45);
+
+box-shadow:0 15px 35px rgba(11,61,46,.10);
+
+}
+
+
+/*=========================================
+    STEP NUMBER
+==========================================*/
+
+.process-card .step-number{
+
+position:absolute;
+
+top:17px;
+
+right:18px;
+
+color:#C9A646;
+
+font-size:13px;
+
+font-weight:800;
+
+letter-spacing:1px;
+
+}
+
+
+/*=========================================
+    ICON
+==========================================*/
+
+.process-card > i{
+
+width:62px;
+
+height:62px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+margin:5px auto 20px;
+
+background:#0B3D2E;
+
+color:#C9A646;
+
+border-radius:16px;
+
+font-size:24px;
+
+transition:all .3s ease;
+
+}
+
+
+.process-card:hover > i{
+
+background:#C9A646;
+
+color:#0B3D2E;
+
+transform:scale(1.05);
+
+}
+
+
+/*=========================================
+    CARD TITLE
+==========================================*/
+
+.process-card h4{
+
+color:#0B3D2E;
+
+font-size:19px;
+
+font-weight:700;
+
+margin-bottom:10px;
+
+}
+
+
+/*=========================================
+    CARD TEXT
+==========================================*/
+
+.process-card p{
+
+color:#666;
+
+font-size:14px;
+
+line-height:1.8;
+
+margin:0;
+
+}
+
+
+/*=========================================
+    MOBILE
+==========================================*/
+
+@media(max-width:768px){
+
+.ames-process{
+
+    padding:60px 0;
+
+}
+
+
+.ames-process .section-title{
+
+    font-size:32px;
+
+}
+
+
+.ames-process .section-description{
+
+    font-size:15px;
+
+}
+
+
+.process-card{
+
+    padding:30px 23px;
+
+}
+
+}
+
+/*=========================================
+    WHY INHERITANCE
+==========================================*/
+
+.why-inheritance{
+
+padding:90px 0;
+
+background:
+    radial-gradient(
+        circle at 10% 20%,
+        rgba(201,166,70,.18),
+        transparent 25%
+    ),
+    radial-gradient(
+        circle at 90% 80%,
+        rgba(201,166,70,.12),
+        transparent 25%
+    ),
+    #0B3D2E;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+/*=========================================
+    DECORATIVE GOLD CIRCLES
+==========================================*/
+
+.why-inheritance::before{
+
+content:"";
+
+position:absolute;
+
+width:220px;
+
+height:220px;
+
+border:1px solid rgba(201,166,70,.25);
+
+border-radius:50%;
+
+top:-100px;
+
+left:-80px;
+
+}
+
+
+.why-inheritance::after{
+
+content:"";
+
+position:absolute;
+
+width:300px;
+
+height:300px;
+
+border:1px solid rgba(201,166,70,.18);
+
+border-radius:50%;
+
+bottom:-160px;
+
+right:-100px;
+
+}
+
+
+/*=========================================
+    SECTION CONTENT
+==========================================*/
+
+.why-inheritance .container{
+
+position:relative;
+
+z-index:2;
+
+}
+
+
+/*=========================================
+    SECTION INTRO
+==========================================*/
+
+.why-inheritance .section-tag{
+
+display:inline-block;
+
+color:#C9A646;
+
+font-size:14px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+margin-bottom:12px;
+
+}
+
+
+.why-inheritance .section-title{
+
+color:#fff;
+
+font-size:40px;
+
+font-weight:800;
+
+line-height:1.3;
+
+margin-bottom:15px;
+
+}
+
+
+.why-inheritance .section-description{
+
+max-width:720px;
+
+margin:0 auto;
+
+color:rgba(255,255,255,.78);
+
+font-size:16px;
+
+line-height:1.8;
+
+}
+
+
+/*=========================================
+    CARDS
+==========================================*/
+
+.inheritance-card{
+
+height:100%;
+
+padding:32px 28px;
+
+background:#fff;
+
+border:1px solid rgba(201,166,70,.15);
+
+border-radius:22px;
+
+transition:all .35s ease;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+.inheritance-card:hover{
+
+transform:translateY(-8px);
+
+border-color:#C9A646;
+
+box-shadow:0 20px 40px rgba(0,0,0,.18);
+
+}
+
+
+/*=========================================
+    ICON
+==========================================*/
+
+.inheritance-icon{
+
+width:58px;
+
+height:58px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:#0B3D2E;
+
+color:#C9A646;
+
+border-radius:16px;
+
+margin-bottom:20px;
+
+transition:.35s ease;
+
+}
+
+
+.inheritance-icon i{
+
+font-size:24px;
+
+}
+
+
+.inheritance-card:hover .inheritance-icon{
+
+background:#C9A646;
+
+color:#0B3D2E;
+
+}
+
+
+/*=========================================
+    CARD CONTENT
+==========================================*/
+
+.inheritance-card h4{
+
+color:#0B3D2E;
+
+font-size:19px;
+
+font-weight:700;
+
+line-height:1.4;
+
+margin-bottom:10px;
+
+}
+
+
+.inheritance-card p{
+
+color:#666;
+
+font-size:14px;
+
+line-height:1.8;
+
+margin:0;
+
+}
+
+
+/*=========================================
+    MOBILE
+==========================================*/
+
+@media(max-width:768px){
+
+.why-inheritance{
+
+    padding:65px 0;
+
+}
+
+.why-inheritance .section-title{
+
+    font-size:32px;
+
+}
+
+}
+
+
+/*=========================================
+    FAQ BACKGROUND
+==========================================*/
+
+.inheritance-faq{
+
+padding:50px 0;
+
+background:
+    radial-gradient(
+        circle at 8% 20%,
+        rgba(201,166,70,.13),
+        transparent 22%
+    ),
+    radial-gradient(
+        circle at 92% 80%,
+        rgba(11,61,46,.07),
+        transparent 25%
+    ),
+    #F7F3EA;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+/* Decorative gold ring */
+
+.inheritance-faq::before{
+
+content:"";
+
+position:absolute;
+
+width:230px;
+
+height:230px;
+
+border:1px solid rgba(201,166,70,.20);
+
+border-radius:50%;
+
+top:-120px;
+
+right:-70px;
+
+}
+
+
+/* Decorative second ring */
+
+.inheritance-faq::after{
+
+content:"";
+
+position:absolute;
+
+width:150px;
+
+height:150px;
+
+border:1px solid rgba(11,61,46,.10);
+
+border-radius:50%;
+
+bottom:-80px;
+
+left:-60px;
+
+}
+
+
+.inheritance-faq .container{
+
+position:relative;
+
+z-index:2;
+
+}
+
+
+/*=========================================
+    SECTION INTRO
+==========================================*/
+
+.inheritance-faq .section-tag{
+
+display:inline-block;
+
+color:#C9A646;
+
+font-size:14px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+margin-bottom:12px;
+
+}
+
+
+.inheritance-faq .section-title{
+
+color:#0B3D2E;
+
+font-size:40px;
+
+font-weight:800;
+
+line-height:1.3;
+
+margin-bottom:15px;
+
+}
+
+
+.inheritance-faq .section-description{
+
+max-width:680px;
+
+margin:0 auto;
+
+color:#666;
+
+font-size:16px;
+
+line-height:1.8;
+
+}
+
+
+/*=========================================
+    FAQ ACCORDION
+==========================================*/
+
+.inheritance-faq .accordion-item{
+
+margin-bottom:14px;
+
+border:1px solid rgba(11,61,46,.10);
+
+border-radius:14px !important;
+
+overflow:hidden;
+
+background:#F8FAF9;
+
+}
+
+
+/*=========================================
+    QUESTION
+==========================================*/
+
+.inheritance-faq .accordion-button{
+
+padding:20px 24px;
+
+background:#F8FAF9;
+
+color:#0B3D2E;
+
+font-size:16px;
+
+font-weight:700;
+
+box-shadow:none;
+
+}
+
+
+/* Remove default blue focus */
+
+.inheritance-faq .accordion-button:focus{
+
+box-shadow:none;
+
+}
+
+
+/* Open question */
+
+.inheritance-faq .accordion-button:not(.collapsed){
+
+background:#0B3D2E;
+
+color:#fff;
+
+}
+
+/*=========================================
+        FAQ ARROW
+==========================================*/
+
+.inheritance-faq .accordion-button::after{
+
+    content:"" !important;
+
+    width:10px !important;
+
+    height:10px !important;
+
+    margin-left:auto !important;
+
+    background-image:none !important;
+
+    border-right:2px solid #C9A646;
+
+    border-bottom:2px solid #C9A646;
+
+    transform:rotate(45deg) !important;
+
+    transition:transform .3s ease;
+
+}
+
+
+/* Arrow when FAQ is open */
+
+.inheritance-faq .accordion-button:not(.collapsed)::after{
+
+    content:"" !important;
+
+    background-image:none !important;
+
+    border-right:2px solid #C9A646;
+
+    border-bottom:2px solid #C9A646;
+
+    transform:rotate(225deg) !important;
+
+}
+/*=========================================
+        MOBILE
+==========================================*/
+
+@media(max-width:768px){
+
+    .inheritance-faq{
+
+        padding:60px 0;
+
+    }
+
+
+    .inheritance-faq .section-title{
+
+        font-size:32px;
+
+    }
+
+
+    .inheritance-faq .accordion-button{
+
+        padding:17px 18px;
+
+        font-size:15px;
+
+    }
+
+
+    .inheritance-faq .accordion-body{
+
+        padding:18px;
+
+        font-size:14px;
+
+    }
+
+}
+
+
+/*=========================================
+    INHERITANCE CTA
+==========================================*/
+
+.inheritance-cta{
+
+padding:70px 0;
+
+background:#F7F3EA;
+
+}
+
+
+/*=========================================
+    CTA BOX
+==========================================*/
+
+.cta-box{
+
+padding:50px 55px;
+
+background:#fff;
+
+border-radius:25px;
+
+border:1px solid rgba(201,166,70,.3);
+
+position:relative;
+
+overflow:hidden;
+
+box-shadow:0 15px 40px rgba(11,61,46,.07);
+
+}
+
+
+/* Gold accent */
+
+.cta-box::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:6px;
+
+height:100%;
+
+background:#C9A646;
+
+}
+
+
+/*=========================================
+    TEXT
+==========================================*/
+
+.cta-box .section-tag{
+
+color:#C9A646;
+
+font-size:13px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+}
+
+
+.cta-box h2{
+
+color:#0B3D2E;
+
+font-size:34px;
+
+font-weight:800;
+
+margin:10px 0 12px;
+
+}
+
+
+.cta-box p{
+
+max-width:650px;
+
+color:#666;
+
+font-size:15px;
+
+line-height:1.8;
+
+margin:0;
+
+}
+
+
+/*=========================================
+    CTA BUTTON
+==========================================*/
+
+.cta-btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:14px 25px;
+
+background:#0B3D2E;
+
+color:#fff !important;
+
+border:2px solid #0B3D2E;
+
+border-radius:50px;
+
+font-size:14px;
+
+font-weight:700;
+
+text-decoration:none;
+
+transition:.3s ease;
+
+}
+
+
+.cta-btn:hover{
+
+background:#C9A646;
+
+border-color:#C9A646;
+
+color:#0B3D2E !important;
+
+transform:translateY(-3px);
+
+}
+
+
+/*=========================================
+    AMES LINK
+==========================================*/
+
+.cta-link{
+
+display:block;
+
+margin-top:14px;
+
+color:#0B3D2E !important;
+
+font-size:14px;
+
+font-weight:600;
+
+text-decoration:none;
+
+}
+
+
+.cta-link:hover{
+
+color:#C9A646 !important;
+
+}
+
+
+/*=========================================
+    MOBILE
+==========================================*/
+
+@media(max-width:768px){
+
+.inheritance-cta{
+
+    padding:55px 0;
+
+}
+
+.cta-box{
+
+    padding:40px 30px;
+
+}
+
+.cta-box h2{
+
+    font-size:29px;
+
+}
+
+.cta-box .text-lg-end{
+
+    text-align:left !important;
+
+}
+
+}
+/*=========================================
+        MODERN FOOTER
+==========================================*/
+
+.footer{
+
+    background:#0B3D2E;
+
+    color:#fff;
+
+    padding:80px 0 25px;
+
+}
+
+
+/*=========================================
+        FOOTER BRAND
+==========================================*/
+
+.footer-logo{
+
+    width:75px;
+
+    height:75px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    margin-bottom:20px;
+
+}
+
+.footer h3{
+
+    color:#fff;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:5px;
+
+}
+
+.footer-subtitle{
+
+    color:#C9A646 !important;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.footer p{
+
+    color:rgba(255,255,255,.75);
+
+    line-height:1.8;
+
+}
+
+
+/*=========================================
+        FOOTER HEADINGS
+==========================================*/
+
+.footer h5{
+
+    color:#C9A646;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+
+/*=========================================
+        FOOTER LINKS
+==========================================*/
+
+.footer-links{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.footer-links li{
+
+    color:rgba(255,255,255,.75);
+
+    margin-bottom:13px;
+
+    line-height:1.6;
+
+}
+
+.footer-links a{
+
+    color:rgba(255,255,255,.75);
+
+    text-decoration:none;
+
+    transition:all .3s ease;
+
+}
+
+.footer-links a:hover{
+
+    color:#C9A646;
+
+    padding-left:5px;
+
+}
+
+
+/*=========================================
+        CONTACT ICONS
+==========================================*/
+
+.footer-links li i{
+
+    color:#C9A646;
+
+}
+
+
+/*=========================================
+        SOCIAL ICONS
+==========================================*/
+
+.social-icons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+.social-icons a{
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:1px solid rgba(201,166,70,.5);
+
+    border-radius:50%;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:all .3s ease;
+
+}
+
+.social-icons a:hover{
+
+    background:#C9A646;
+
+    color:#0B3D2E;
+
+    border-color:#C9A646;
+
+    transform:translateY(-4px);
+
+}
+
+
+/*=========================================
+        LAUNCH AMES BUTTON
+==========================================*/
+
+.footer .btn-launch{
+
+    background:#C9A646;
+
+    color:#0B3D2E !important;
+
+    border:2px solid #C9A646;
+
+    padding:13px 30px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:all .35s ease;
+
+}
+.footer .btn-launch:hover{
+
+    background:#fff;
+
+    border-color:#fff;
+
+    color:#0B3D2E !important;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+
+/*=========================================
+        FOOTER BOTTOM
+==========================================*/
+
+.footer-bottom{
+
+    margin-top:60px;
+
+    padding-top:25px;
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    text-align:center;
+
+}
+
+.footer-bottom p{
+
+    margin:0;
+
+    font-size:14px;
+
+    color:rgba(255,255,255,.65);
+
+}
+
+.footer-bottom a{
+
+    color:rgba(255,255,255,.75);
+
+    text-decoration:none;
+
+    transition:.3s ease;
+
+}
+
+.footer-bottom a:hover{
+
+    color:#C9A646;
+
+}
+
+.footer-bottom span{
+
+    margin:0 8px;
+
+    color:#C9A646;
+
+}
+
+
+/*=========================================
+        MOBILE
+==========================================*/
+
+@media(max-width:991px){
+
+    .footer{
+
+        padding:65px 0 25px;
+
+    }
+
+}
+
+/*=========================================
+        MOBILE AMES BUTTON
+==========================================*/
+
+@media(max-width:768px){
+
+    .footer .btn-launch{
+
+        width:auto;
+
+        max-width:190px;
+
+        padding:15px 20px;
+
+        font-size:13px;
+
+        display:inline-flex;
+
+    }
+
+}
+
+    .footer-bottom{
+
+        margin-top:45px;
+
+    }
+
+    .footer-bottom p{
+
+        line-height:2;
+
+    }
+
+    .social-icons{
+
+        margin-bottom:10px;
+
+    }
+
