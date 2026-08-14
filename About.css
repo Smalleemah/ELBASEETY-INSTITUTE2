@@ -421,7 +421,7 @@ transform:translateY(-3px);
 
     position:relative;
 
-    padding:15px;
+    padding: 20px;
 
 }
 
@@ -448,7 +448,6 @@ transform:translateY(-3px);
 
 }
 
-
 .story-image img{
 
     position:relative;
@@ -457,16 +456,15 @@ transform:translateY(-3px);
 
     width:100%;
 
-    height:480px;
+    aspect-ratio:1 / 1;
 
     object-fit:cover;
 
-    border-radius:25px;
+    border-radius:50%;
 
     box-shadow:0 20px 45px rgba(11,61,46,.12);
 
 }
-
 
 /*==================================
     EXPERIENCE BOX
@@ -711,7 +709,7 @@ transform:translateY(-3px);
 
     .our-story{
 
-        padding:60px 0 80px;
+        padding:50px 0 70px;
 
     }
 
