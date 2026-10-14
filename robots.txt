@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elbaseetyinstitut.netlify.app/sitemap.xml
